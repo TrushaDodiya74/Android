@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:id="@+id/main">
+
+    <!-- TextView to display text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Radio Buttons (No RadioGroup) -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="BCA" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="BCOM" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="BBA" />
+    </RadioGroup>
+
+    <!-- AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView to display selected option -->
+    <TextView
+        android:id="@+id/textViewRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option of RG"
+        android:textSize="20dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Show call logs">
+    </Button>
+
+    <!-- ScrollView to make the TextView scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/textViewCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call History"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black" />
+    </ScrollView>
+</LinearLayout>

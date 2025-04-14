@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+
+    <item
+        android:id="@+id/nav_add_transaction"
+        android:title="Add Transaction"
+        android:icon="@drawable/ic_add"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+
+    <item
+        android:id="@+id/nav_transaction_history"
+        android:title="Transaction History"
+        android:icon="@drawable/transaction_history"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+
+    <item
+        android:id="@+id/nav_reports"
+        android:title="Reports"
+        android:icon="@drawable/ic_report"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_setting"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+        android:background="?attr/selectableItemBackgroundBorderless" /> <!-- Ripple effect -->
+</menu>

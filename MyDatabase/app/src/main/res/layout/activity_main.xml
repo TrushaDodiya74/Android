@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Login"
+            android:gravity="center_horizontal"
+            android:textSize="50dp"/>
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            />
+        <Button
+            android:id="@+id/doReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do Register"
+            />
+        <Button
+            android:id="@+id/doDisp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do Register"
+            />
+        <Button
+            android:id="@+id/doDel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do Register"
+            />
+    </LinearLayout>
+</ScrollView>

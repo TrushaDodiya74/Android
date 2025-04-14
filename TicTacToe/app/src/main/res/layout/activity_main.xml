@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#8DE9F2"
+    android:id="@+id/main">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical">
+
+        <!-- Player 1 Image -->
+        <ImageView
+            android:id="@+id/player1_icon"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/user"
+            android:layout_gravity="center" />
+
+        <!-- Player Info -->
+        <TextView
+            android:id="@+id/player1_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Player 1\nO"
+            android:gravity="center"
+            android:textColor="#155F8A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/player2_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Player 2\nX"
+            android:gravity="center"
+            android:textColor="#155F8A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Player 2 Image -->
+        <ImageView
+            android:id="@+id/player2_icon"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/user"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+
+    <!-- Game Board -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp">
+
+        <!-- Row 1 -->
+        <TableRow>
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="#155F8A"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:onClick="myvalidate"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/bclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Clear"
+        android:background="#155F8A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="myvalidate"/>
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Go to Next Page"
+        android:background="#155F8A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

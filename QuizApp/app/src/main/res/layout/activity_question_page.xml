@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/mycolor"
+    tools:context=".QuestionPage">
+
+    <TextView
+        android:id="@+id/examNM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/item_bg"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/item_bg"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q1. What is your favorite color?"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item_bg"
+        android:padding="10dp"/>
+
+    <!-- Options Section -->
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textSize="14sp"
+            android:buttonTint="@color/primary"
+            android:padding="8dp"
+            android:background="@drawable/item_bg"
+            android:layout_margin="10dp" />
+
+        <RadioButton
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textSize="14sp"
+            android:buttonTint="@color/primary"
+            android:padding="8dp"
+            android:background="@drawable/item_bg"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textSize="14sp"
+            android:buttonTint="@color/primary"
+            android:padding="8dp"
+            android:background="@drawable/item_bg"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textSize="14sp"
+            android:buttonTint="@color/primary"
+            android:padding="8dp"
+            android:background="@drawable/item_bg"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/item_bg">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textColor="@color/white"
+            android:backgroundTint="#CE8E46"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:backgroundTint="#CE8E46"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:backgroundTint="#CE8E46"
+            android:padding="8dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTint="#CE8E46"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_bg"/>
+    </LinearLayout>
+</LinearLayout>

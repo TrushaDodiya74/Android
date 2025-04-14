@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/mycolor">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Score"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/item_bg"/>
+
+    <TextView android:id="@+id/attemptedText" style="@style/ResultTextStyle"/>
+    <TextView android:id="@+id/notAttemptedText" style="@style/ResultTextStyle"/>
+    <TextView android:id="@+id/correctText" style="@style/ResultTextStyle"/>
+    <TextView android:id="@+id/incorrectText" style="@style/ResultTextStyle"/>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart Quiz"
+        android:textColor="@color/white"
+        android:backgroundTint="#CE8E46"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

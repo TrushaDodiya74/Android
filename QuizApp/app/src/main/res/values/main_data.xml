@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="que">
+        <item>Q1. What is your favourite color?</item>
+        <item>Q2. What is your hobby?</item>
+        <item>Q3. Which is the largest planet in our solar system?</item>
+        <item>Q4. Who wrote Hamlet ?</item>
+        <item>Q5. What is the capital of France?</item>
+        <item>Q6. What element does O represent on the periodic table?</item>
+        <item>Q7. Which year did the Titanic sink?</item>
+        <item>Q8. Who painted the Mona Lisa?</item>
+        <item>Q9. What is the hardest natural substance on Earth?</item>
+        <item>Q10. What is the tallest mountain in the world?</item>
+    </string-array>
+
+    <string-array name="mcqA">
+        <item>Red</item>
+        <item>Cricket</item>
+        <item>Earth</item>
+        <item>William Wordsworth</item>
+        <item>Berlin</item>
+        <item>Hydrogen</item>
+        <item>1905</item>
+        <item>Vincent van Gogh</item>
+        <item>Gold</item>
+        <item>Mount Kilimanjaro</item>
+    </string-array>
+
+    <string-array name="mcqB">
+        <item>White</item>
+        <item>Carrom</item>
+        <item>Jupiter</item>
+        <item>William Shakespeare</item>
+        <item>Madrid</item>
+        <item>Oxygen</item>
+        <item>1912</item>
+        <item>Pablo Picasso</item>
+        <item>Iron</item>
+        <item>Mount Fuji</item>
+    </string-array>
+
+    <string-array name="mcqC">
+        <item>Green</item>
+        <item>Chess</item>
+        <item>Saturn</item>
+        <item>Charles Dickens</item>
+        <item>Paris</item>
+        <item>Carbon</item>
+        <item>1920</item>
+        <item>Leonardo da Vinci</item>
+        <item>Diamond</item>
+        <item>Mount Everest</item>
+    </string-array>
+
+    <string-array name="mcqD">
+        <item>Black</item>
+        <item>Hockey</item>
+        <item>Mars</item>
+        <item>Jane Austen</item>
+        <item>Rome</item>
+        <item>Nitrogen</item>
+        <item>1935</item>
+        <item>Claude Monet</item>
+        <item>Silver</item>
+        <item>K2</item>
+    </string-array>
+
+    <string-array name="mcqCA">
+        <item>White</item>
+        <item>Chess</item>
+        <item>Jupiter</item>
+        <item>William Shakespeare</item>
+        <item>Paris</item>
+        <item>Oxygen</item>
+        <item>1912</item>
+        <item>Leonardo da Vinci</item>
+        <item>Diamond</item>
+        <item>Mount Everest</item>
+    </string-array>
+</resources>

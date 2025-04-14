@@ -1,0 +1,239 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Result"
+        android:textAlignment="viewEnd"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_above="@id/button_container"
+        android:layout_marginBottom="40px"/>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="30px">
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30px">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px"
+                />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px"
+                />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px"
+                />
+
+            <Button
+                android:id="@+id/bplus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30px">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/bminus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Third Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30px">
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="7"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/bmulti"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Fourth Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30px">
+
+            <Button
+                android:id="@+id/bclear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="C"
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/bt0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:onClick="myfunction"
+                android:background="#5371A2"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/bequal"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="="
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white"
+                android:layout_marginRight="30px" />
+
+            <Button
+                android:id="@+id/bdiv"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="/"
+                android:onClick="myfunction"
+                android:background="#3259BA"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

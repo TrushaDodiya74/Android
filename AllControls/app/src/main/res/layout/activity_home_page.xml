@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="#F2F9FF">
+
+    <!-- Center the TableLayout in the parent -->
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <!-- First Row: Title TextView -->
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="347dp"
+                android:layout_height="183dp"
+                android:layout_gravity="center"
+                android:maxWidth="17dp"
+                android:maxHeight="100dp"
+                android:src="@drawable/welcome" />
+        </TableRow>
+
+        <!-- Second Row: ProgressBar -->
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:progressBackgroundTint="#0B59D7"/>
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0/100"
+                android:textColor="#0B59D7"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
