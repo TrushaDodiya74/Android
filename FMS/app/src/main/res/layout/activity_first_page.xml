@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".FirstPage">
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/finance"
+                android:scaleType="fitCenter"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="300dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:progressBackgroundTint="#0B59D7"
+                android:progressTint="#FD8140"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0/100"
+                android:textColor="#FD8140"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

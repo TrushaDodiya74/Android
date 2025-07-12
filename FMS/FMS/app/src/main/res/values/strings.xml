@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FMS</string>
+    <string name="default_web_client_id">424914158575-t9re704anibrqectfv95800fhqv6m4hk.apps.googleusercontent.com
+</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="loading_data">Loading Data...</string>
+    <string-array name="categories">
+    </string-array>
+    <string-array name="currencies">
+        <item>₹ INR</item>
+        <item>$ USD</item>
+        <item>€ EUR</item>
+        <item>£ GBP</item>
+        <item>¥ JPY</item>
+    </string-array>
+
+</resources>
